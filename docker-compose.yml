@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  db:
+    container_name: node-orm-db
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: node-orm
+    ports:
+      - "5432:5432"
